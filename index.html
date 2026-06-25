@@ -1,0 +1,695 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";}
+.MsoChpDefault
+	{font-family:"Calibri","sans-serif";}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;</p>
+
+<p class=MsoNormal>&lt;html lang=&quot;vi&quot;&gt;</p>
+
+<p class=MsoNormal>&lt;head&gt;</p>
+
+<p class=MsoNormal>    &lt;meta charset=&quot;UTF-8&quot;&gt;</p>
+
+<p class=MsoNormal>    &lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</p>
+
+<p class=MsoNormal>    &lt;title&gt;GitHub Profile Mockup&lt;/title&gt;</p>
+
+<p class=MsoNormal>    &lt;style&gt;</p>
+
+<p class=MsoNormal>        /* --- 1. MÃ MÀU CHU&#7848;N GITHUB DARK MODE --- */</p>
+
+<p class=MsoNormal>        :root {</p>
+
+<p class=MsoNormal>            --bg-canvas: #0d1117;       /* N&#7873;n chính
+*/</p>
+
+<p class=MsoNormal>            --bg-card: #161b22;         /* N&#7873;n card */</p>
+
+<p class=MsoNormal>            --border-color: #30363d;    /* Màu vi&#7873;n */</p>
+
+<p class=MsoNormal>            --text-primary: #c9d1d9;    /* Ch&#7919; chính
+*/</p>
+
+<p class=MsoNormal>            --text-secondary: #8b949e;  /* Ch&#7919; ph&#7909;
+*/</p>
+
+<p class=MsoNormal>            --link-color: #58a6ff;      /* Màu link xanh */</p>
+
+<p class=MsoNormal>            --btn-bg: #21262d;          /* N&#7873;n nút b&#7845;m
+*/</p>
+
+<p class=MsoNormal>            --btn-hover: #30363d;       /* Nút b&#7845;m khi
+hover */</p>
+
+<p class=MsoNormal>            --html-color: #e34c26;      /* Màu c&#7911;a ch&#7845;m
+tròn ngôn ng&#7919; HTML */</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 2. RESET GIAO DI&#7878;N --- */</p>
+
+<p class=MsoNormal>        * {</p>
+
+<p class=MsoNormal>            margin: 0;</p>
+
+<p class=MsoNormal>            padding: 0;</p>
+
+<p class=MsoNormal>            box-sizing: border-box;</p>
+
+<p class=MsoNormal>            font-family: -apple-system, BlinkMacSystemFont,
+&quot;Segoe UI&quot;, Helvetica, Arial, sans-serif;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        body {</p>
+
+<p class=MsoNormal>            background-color: var(--bg-canvas);</p>
+
+<p class=MsoNormal>            color: var(--text-primary);</p>
+
+<p class=MsoNormal>            padding: 40px 20px;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            justify-content: center;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 3. LAYOUT CHÍNH (CONTAINER) --- */</p>
+
+<p class=MsoNormal>        .github-container {</p>
+
+<p class=MsoNormal>            width: 100%;</p>
+
+<p class=MsoNormal>            max-width: 900px;</p>
+
+<p class=MsoNormal>            display: grid;</p>
+
+<p class=MsoNormal>            grid-template-columns: 260px 1fr;</p>
+
+<p class=MsoNormal>            gap: 32px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 4. C&#7896;T TRÁI: THÔNG TIN CÁ NHÂN
+(SIDEBAR) --- */</p>
+
+<p class=MsoNormal>        .sidebar {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            flex-direction: column;</p>
+
+<p class=MsoNormal>            align-items: flex-start;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .avatar {</p>
+
+<p class=MsoNormal>            width: 100%;</p>
+
+<p class=MsoNormal>            max-width: 260px;</p>
+
+<p class=MsoNormal>            border-radius: 50%;</p>
+
+<p class=MsoNormal>            border: 1px solid var(--border-color);</p>
+
+<p class=MsoNormal>            margin-bottom: 16px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .user-name {</p>
+
+<p class=MsoNormal>            font-size: 24px;</p>
+
+<p class=MsoNormal>            font-weight: 600;</p>
+
+<p class=MsoNormal>            line-height: 1.25;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .user-username {</p>
+
+<p class=MsoNormal>            font-size: 20px;</p>
+
+<p class=MsoNormal>            font-weight: 300;</p>
+
+<p class=MsoNormal>            color: var(--text-secondary);</p>
+
+<p class=MsoNormal>            margin-bottom: 16px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .user-bio {</p>
+
+<p class=MsoNormal>            font-size: 14px;</p>
+
+<p class=MsoNormal>            margin-bottom: 16px;</p>
+
+<p class=MsoNormal>            line-height: 1.5;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-edit {</p>
+
+<p class=MsoNormal>            width: 100%;</p>
+
+<p class=MsoNormal>            background-color: var(--btn-bg);</p>
+
+<p class=MsoNormal>            color: var(--text-primary);</p>
+
+<p class=MsoNormal>            border: 1px solid var(--border-color);</p>
+
+<p class=MsoNormal>            padding: 6px 16px;</p>
+
+<p class=MsoNormal>            font-size: 14px;</p>
+
+<p class=MsoNormal>            font-weight: 500;</p>
+
+<p class=MsoNormal>            border-radius: 6px;</p>
+
+<p class=MsoNormal>            cursor: pointer;</p>
+
+<p class=MsoNormal>            text-align: center;</p>
+
+<p class=MsoNormal>            transition: background-color 0.2s;</p>
+
+<p class=MsoNormal>            margin-bottom: 16px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .btn-edit:hover {</p>
+
+<p class=MsoNormal>            background-color: var(--btn-hover);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .user-stats {</p>
+
+<p class=MsoNormal>            font-size: 14px;</p>
+
+<p class=MsoNormal>            color: var(--text-secondary);</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            gap: 8px;</p>
+
+<p class=MsoNormal>            align-items: center;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .user-stats strong {</p>
+
+<p class=MsoNormal>            color: var(--text-primary);</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 5. C&#7896;T PH&#7842;I: DANH SÁCH REPOSITORY
+--- */</p>
+
+<p class=MsoNormal>        .main-content {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            flex-direction: column;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .section-title {</p>
+
+<p class=MsoNormal>            font-size: 16px;</p>
+
+<p class=MsoNormal>            font-weight: 400;</p>
+
+<p class=MsoNormal>            margin-bottom: 16px;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            justify-content: space-between;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .repo-grid {</p>
+
+<p class=MsoNormal>            display: grid;</p>
+
+<p class=MsoNormal>            grid-template-columns: repeat(auto-fit,
+minmax(300px, 1fr));</p>
+
+<p class=MsoNormal>            gap: 16px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* Chi ti&#7871;t t&#7915;ng th&#7867; Kho l&#432;u
+tr&#7919; (Repo Card) */</p>
+
+<p class=MsoNormal>        .repo-card {</p>
+
+<p class=MsoNormal>            background-color: var(--bg-canvas);</p>
+
+<p class=MsoNormal>            border: 1px solid var(--border-color);</p>
+
+<p class=MsoNormal>            border-radius: 6px;</p>
+
+<p class=MsoNormal>            padding: 16px;</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            flex-direction: column;</p>
+
+<p class=MsoNormal>            justify-content: space-between;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .repo-header a {</p>
+
+<p class=MsoNormal>            color: var(--link-color);</p>
+
+<p class=MsoNormal>            font-weight: 600;</p>
+
+<p class=MsoNormal>            font-size: 14px;</p>
+
+<p class=MsoNormal>            text-decoration: none;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .repo-header a:hover {</p>
+
+<p class=MsoNormal>            text-decoration: underline;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .repo-badge {</p>
+
+<p class=MsoNormal>            font-size: 12px;</p>
+
+<p class=MsoNormal>            color: var(--text-secondary);</p>
+
+<p class=MsoNormal>            border: 1px solid var(--border-color);</p>
+
+<p class=MsoNormal>            padding: 2px 7px;</p>
+
+<p class=MsoNormal>            border-radius: 20px;</p>
+
+<p class=MsoNormal>            font-weight: 500;</p>
+
+<p class=MsoNormal>            margin-left: 8px;</p>
+
+<p class=MsoNormal>            display: inline-block;</p>
+
+<p class=MsoNormal>            vertical-align: middle;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .repo-description {</p>
+
+<p class=MsoNormal>            font-size: 12px;</p>
+
+<p class=MsoNormal>            color: var(--text-secondary);</p>
+
+<p class=MsoNormal>            margin-top: 8px;</p>
+
+<p class=MsoNormal>            margin-bottom: 16px;</p>
+
+<p class=MsoNormal>            line-height: 1.5;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .repo-meta {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            gap: 16px;</p>
+
+<p class=MsoNormal>            font-size: 12px;</p>
+
+<p class=MsoNormal>            color: var(--text-secondary);</p>
+
+<p class=MsoNormal>            align-items: center;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .lang-dot {</p>
+
+<p class=MsoNormal>            width: 12px;</p>
+
+<p class=MsoNormal>            height: 12px;</p>
+
+<p class=MsoNormal>            border-radius: 50%;</p>
+
+<p class=MsoNormal>            background-color: var(--html-color);</p>
+
+<p class=MsoNormal>            display: inline-block;</p>
+
+<p class=MsoNormal>            margin-right: 4px;</p>
+
+<p class=MsoNormal>            vertical-align: middle;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        .meta-item {</p>
+
+<p class=MsoNormal>            display: flex;</p>
+
+<p class=MsoNormal>            align-items: center;</p>
+
+<p class=MsoNormal>            gap: 4px;</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        /* --- 6. RESPONSIVE CHO MOBILE --- */</p>
+
+<p class=MsoNormal>        @media (max-width: 768px) {</p>
+
+<p class=MsoNormal>            .github-container {</p>
+
+<p class=MsoNormal>                grid-template-columns: 1fr;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>            .sidebar {</p>
+
+<p class=MsoNormal>                align-items: center;</p>
+
+<p class=MsoNormal>                text-align: center;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>            .avatar {</p>
+
+<p class=MsoNormal>                max-width: 150px;</p>
+
+<p class=MsoNormal>            }</p>
+
+<p class=MsoNormal>        }</p>
+
+<p class=MsoNormal>    &lt;/style&gt;</p>
+
+<p class=MsoNormal>&lt;/head&gt;</p>
+
+<p class=MsoNormal>&lt;body&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;div class=&quot;github-container&quot;&gt;</p>
+
+<p class=MsoNormal>        </p>
+
+<p class=MsoNormal>        &lt;aside class=&quot;sidebar&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;img class=&quot;avatar&quot;
+src=&quot;https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&amp;w=300&quot;
+alt=&quot;GitHub Avatar&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;h1 class=&quot;user-name&quot;&gt;Alex
+Coder&lt;/h1&gt;</p>
+
+<p class=MsoNormal>            &lt;h2 class=&quot;user-username&quot;&gt;alexcoder_dev&lt;/h2&gt;</p>
+
+<p class=MsoNormal>            &lt;p class=&quot;user-bio&quot;&gt;Full-stack
+Developer | &#272;am mê mã ngu&#7891;n m&#7903; và xây d&#7921;ng nh&#7919;ng s&#7843;n
+ph&#7849;m web h&#7919;u ích cho c&#7897;ng &#273;&#7891;ng. <span
+style='font-family:"Segoe UI Symbol","sans-serif"'>&#128640;</span>&lt;/p&gt;</p>
+
+<p class=MsoNormal>            &lt;button class=&quot;btn-edit&quot;&gt;Edit
+profile&lt;/button&gt;</p>
+
+<p class=MsoNormal>            </p>
+
+<p class=MsoNormal>            &lt;div class=&quot;user-stats&quot;&gt;</p>
+
+<p class=MsoNormal>                &lt;span&gt;<span style='font-family:"Segoe UI Symbol","sans-serif"'>&#128101;</span>
+&lt;strong&gt;1.2k&lt;/strong&gt; followers&lt;/span&gt;</p>
+
+<p class=MsoNormal>                &lt;span&gt;•&lt;/span&gt;</p>
+
+<p class=MsoNormal>                &lt;span&gt;&lt;strong&gt;450&lt;/strong&gt;
+following&lt;/span&gt;</p>
+
+<p class=MsoNormal>            &lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;/aside&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>        &lt;main class=&quot;main-content&quot;&gt;</p>
+
+<p class=MsoNormal>            &lt;div class=&quot;section-title&quot;&gt;</p>
+
+<p class=MsoNormal>                &lt;span&gt;Pinned repositories&lt;/span&gt;</p>
+
+<p class=MsoNormal>            &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            &lt;div class=&quot;repo-grid&quot;&gt;</p>
+
+<p class=MsoNormal>                </p>
+
+<p class=MsoNormal>                &lt;div class=&quot;repo-card&quot;&gt;</p>
+
+<p class=MsoNormal>                    &lt;div&gt;</p>
+
+<p class=MsoNormal>                        &lt;div
+class=&quot;repo-header&quot;&gt;</p>
+
+<p class=MsoNormal>                            &lt;a
+href=&quot;#&quot;&gt;awesome-web-templates&lt;/a&gt;</p>
+
+<p class=MsoNormal>                            &lt;span
+class=&quot;repo-badge&quot;&gt;Public&lt;/span&gt;</p>
+
+<p class=MsoNormal>                        &lt;/div&gt;</p>
+
+<p class=MsoNormal>                        &lt;p
+class=&quot;repo-description&quot;&gt;T&#7893;ng h&#7907;p các m&#7851;u giao
+di&#7879;n HTML/CSS hi&#7879;n &#273;&#7841;i, responsive và hoàn toàn mi&#7877;n
+phí cho l&#7853;p trình viên.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                    &lt;/div&gt;</p>
+
+<p class=MsoNormal>                    &lt;div class=&quot;repo-meta&quot;&gt;</p>
+
+<p class=MsoNormal>                        &lt;div&gt;&lt;span
+class=&quot;lang-dot&quot;&gt;&lt;/span&gt;HTML&lt;/div&gt;</p>
+
+<p class=MsoNormal>                        &lt;div
+class=&quot;meta-item&quot;&gt;</p>
+
+<p class=MsoNormal>                            &lt;svg
+aria-hidden=&quot;true&quot; height=&quot;16&quot; viewBox=&quot;0 0 16
+16&quot; version=&quot;1.1&quot; width=&quot;16&quot;
+fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M8 .25a.75.75 0 0 1
+.673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719
+4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0
+1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1
+.416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0
+1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084
+2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1
+.216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8
+2.694Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+
+<p class=MsoNormal>                            &lt;span&gt;342&lt;/span&gt;</p>
+
+<p class=MsoNormal>                        &lt;/div&gt;</p>
+
+<p class=MsoNormal>                        &lt;div
+class=&quot;meta-item&quot;&gt;</p>
+
+<p class=MsoNormal>                            &lt;svg
+aria-hidden=&quot;true&quot; height=&quot;16&quot; viewBox=&quot;0 0 16
+16&quot; version=&quot;1.1&quot; width=&quot;16&quot;
+fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M5 3.25a.75.75 0 1 1-1.5 0
+.75.75 0 0 1 1.5 0Zm0 2.122a2.25 2.25 0 1 0-1.5 0v4.256a2.251 2.251 0 1 0 1.5
+0V5.372Zm8-.122a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.122a2.25 2.25 0 1
+0-1.5 0v1.256a2.251 2.251 0 1 0 1.5 0V7.372ZM11.5 11.5a.75.75 0 1 0 0 1.5.75.75
+0 0 0 0-1.5Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+
+<p class=MsoNormal>                            &lt;span&gt;89&lt;/span&gt;</p>
+
+<p class=MsoNormal>                        &lt;/div&gt;</p>
+
+<p class=MsoNormal>                    &lt;/div&gt;</p>
+
+<p class=MsoNormal>                &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>                &lt;div class=&quot;repo-card&quot;&gt;</p>
+
+<p class=MsoNormal>                    &lt;div&gt;</p>
+
+<p class=MsoNormal>                        &lt;div
+class=&quot;repo-header&quot;&gt;</p>
+
+<p class=MsoNormal>                            &lt;a
+href=&quot;#&quot;&gt;github-clone-css&lt;/a&gt;</p>
+
+<p class=MsoNormal>                            &lt;span
+class=&quot;repo-badge&quot;&gt;Public&lt;/span&gt;</p>
+
+<p class=MsoNormal>                        &lt;/div&gt;</p>
+
+<p class=MsoNormal>                        &lt;p
+class=&quot;repo-description&quot;&gt;D&#7921; án nh&#7887; mô ph&#7887;ng l&#7841;i
+giao di&#7879;n GitHub b&#7857;ng CSS nguyên b&#7843;n &#273;&#7875; luy&#7879;n
+t&#7853;p k&#7929; n&#259;ng Grid và Flexbox.&lt;/p&gt;</p>
+
+<p class=MsoNormal>                    &lt;/div&gt;</p>
+
+<p class=MsoNormal>                    &lt;div class=&quot;repo-meta&quot;&gt;</p>
+
+<p class=MsoNormal>                        &lt;div&gt;&lt;span
+class=&quot;lang-dot&quot;&gt;&lt;/span&gt;HTML&lt;/div&gt;</p>
+
+<p class=MsoNormal>                        &lt;div
+class=&quot;meta-item&quot;&gt;</p>
+
+<p class=MsoNormal>                            &lt;svg
+aria-hidden=&quot;true&quot; height=&quot;16&quot; viewBox=&quot;0 0 16
+16&quot; version=&quot;1.1&quot; width=&quot;16&quot;
+fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M8 .25a.75.75 0 0 1
+.673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719
+4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0
+1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1
+.416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0
+1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084
+2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1
+.216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8
+2.694Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+
+<p class=MsoNormal>                            &lt;span&gt;105&lt;/span&gt;</p>
+
+<p class=MsoNormal>                        &lt;/div&gt;</p>
+
+<p class=MsoNormal>                        &lt;div
+class=&quot;meta-item&quot;&gt;</p>
+
+<p class=MsoNormal>                            &lt;svg
+aria-hidden=&quot;true&quot; height=&quot;16&quot; viewBox=&quot;0 0 16
+16&quot; version=&quot;1.1&quot; width=&quot;16&quot;
+fill=&quot;currentColor&quot;&gt;&lt;path d=&quot;M5 3.25a.75.75 0 1 1-1.5 0
+.75.75 0 0 1 1.5 0Zm0 2.122a2.25 2.25 0 1 0-1.5 0v4.256a2.251 2.251 0 1 0 1.5
+0V5.372Zm8-.122a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm0 2.122a2.25 2.25 0 1
+0-1.5 0v1.256a2.251 2.251 0 1 0 1.5 0V7.372ZM11.5 11.5a.75.75 0 1 0 0 1.5.75.75
+0 0 0 0-1.5Z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;</p>
+
+<p class=MsoNormal>                            &lt;span&gt;14&lt;/span&gt;</p>
+
+<p class=MsoNormal>                        &lt;/div&gt;</p>
+
+<p class=MsoNormal>                    &lt;/div&gt;</p>
+
+<p class=MsoNormal>                &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>            &lt;/div&gt;</p>
+
+<p class=MsoNormal>        &lt;/main&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>    &lt;/div&gt;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&lt;/body&gt;</p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
+
+</div>
+
+</body>
+
+</html>
